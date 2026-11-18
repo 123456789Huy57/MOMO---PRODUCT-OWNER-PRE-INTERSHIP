@@ -19,6 +19,8 @@ export interface ParseResult {
   items: ParsedItem[];
   warnings: string[];
   source: 'gemini' | 'rules';
+  /** Gemini model that answered, when source is 'gemini'. */
+  model?: string;
   /** Why Gemini was not used, when source is 'rules'. */
   fallbackReason?: string;
   latencyMs: number;

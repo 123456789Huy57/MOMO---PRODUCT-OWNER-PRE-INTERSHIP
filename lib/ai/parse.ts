@@ -28,9 +28,9 @@ export async function parseSpending(text: string, mode: 'auto' | 'rules' = 'auto
     try {
       const g = await parseWithGemini(input);
       const warnings = [...g.warnings];
-      return { items: validateItems(g.items, warnings), warnings, source: 'gemini', latencyMs: Math.round(performance.now() - t0) };
+      return { items: validateItems(g.items, warnings), warnings, source: 'gemini', model: g.model, latencyMs: Math.round(performance.now() - t0) };
     } catch (e) {
-      fallbackReason = e instanceof GeminiError ? e.message.split(':')[0] : 'error';
+      fallbackReason = e instanceof GeminiError ? e.message.slice(0, 160) : 'error';
     }
   } else fallbackReason = 'rules_requested';
   const r = parseByRules(input);

@@ -1,6 +1,6 @@
 import { existsSync, mkdirSync, readFileSync, writeFileSync } from 'node:fs';
 import { parseByRules } from '../lib/ai/rules';
-import { GEMINI_MODEL, parseWithGemini } from '../lib/ai/gemini';
+import { currentModel, parseWithGemini } from '../lib/ai/gemini';
 import { validateItems } from '../lib/ai/parse';
 import type { ParsedItem } from '../lib/ai/types';
 
@@ -84,7 +84,7 @@ function summarize(rows: Row[]) {
   mkdirSync('sim/out', { recursive: true });
   const report: Record<string, unknown> = { run_at: new Date().toISOString(), set, cases: cases.length, note: 'Synthetic sentences unless set=real' };
   const all: Record<string, Row[]> = { rules: await run('rules') };
-  if (!rulesOnly) { report.gemini_model = GEMINI_MODEL; all.gemini = await run('gemini'); }
+  if (!rulesOnly) { all.gemini = await run('gemini'); report.gemini_model = currentModel(); }
   else report.gemini = 'skipped (no GEMINI_API_KEY or --rules-only)';
   for (const [k, rows] of Object.entries(all)) {
     report[k] = summarize(rows);

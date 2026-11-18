@@ -6,6 +6,11 @@ import { CATEGORIES, type ParsedItem } from './types';
  * REST call without an SDK so the prototype keeps one fewer dependency.
  */
 export const GEMINI_MODEL = process.env.GEMINI_MODEL || 'gemini-3.1-flash-lite';
+// Model names change over time. If the configured one is not found (HTTP 404),
+// the client tries these aliases in order and remembers the first that answers.
+const FALLBACK_MODELS = ['gemini-flash-lite-latest', 'gemini-2.5-flash-lite', 'gemini-flash-latest'];
+let workingModel: string | null = null;
+export const currentModel = () => workingModel ?? GEMINI_MODEL;
 
 const SYSTEM = `Bạn tách câu ghi chi tiêu tiếng Việt thành danh sách khoản chi.
 Quy tắc:
@@ -42,12 +47,27 @@ const SCHEMA = {
 export class GeminiError extends Error {}
 
 export async function parseWithGemini(text: string, opts: { apiKey?: string; model?: string; timeoutMs?: number } = {}):
-  Promise<{ items: ParsedItem[]; warnings: string[] }> {
+  Promise<{ items: ParsedItem[]; warnings: string[]; model: string }> {
   const key = opts.apiKey ?? process.env.GEMINI_API_KEY;
   if (!key) throw new GeminiError('no_key');
-  const model = opts.model ?? GEMINI_MODEL;
+  const candidates = opts.model ? [opts.model] : [...new Set([workingModel ?? GEMINI_MODEL, GEMINI_MODEL, ...FALLBACK_MODELS])];
+  let last: GeminiError | null = null;
+  for (const model of candidates) {
+    try {
+      const r = await callModel(model, key, text, opts.timeoutMs);
+      workingModel = model;
+      return { ...r, model };
+    } catch (e) {
+      last = e as GeminiError;
+      if (!String(last.message).startsWith('http_404')) throw last;
+    }
+  }
+  throw last ?? new GeminiError('no_model');
+}
+
+async function callModel(model: string, key: string, text: string, timeoutMs?: number) {
   const ctrl = new AbortController();
-  const timer = setTimeout(() => ctrl.abort(), opts.timeoutMs ?? 5000);
+  const timer = setTimeout(() => ctrl.abort(), timeoutMs ?? 5000);
   try {
     const res = await fetch(`https://generativelanguage.googleapis.com/v1beta/models/${model}:generateContent`, {
       method: 'POST',
