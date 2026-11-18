@@ -1,0 +1,1385 @@
+{
+ "note": "SYNTHETIC test sentences written for the prototype evaluation. Not collected from users.",
+ "cases": [
+  {
+   "id": "s001",
+   "text": "phở 50",
+   "expected": [
+    {
+     "amount": 50000,
+     "category": "An uong"
+    }
+   ],
+   "tags": [
+    "basic"
+   ]
+  },
+  {
+   "id": "s002",
+   "text": "cf 30k",
+   "expected": [
+    {
+     "amount": 30000,
+     "category": "An uong"
+    }
+   ],
+   "tags": [
+    "basic"
+   ]
+  },
+  {
+   "id": "s003",
+   "text": "gửi xe 5k",
+   "expected": [
+    {
+     "amount": 5000,
+     "category": "Di lai"
+    }
+   ],
+   "tags": [
+    "basic"
+   ]
+  },
+  {
+   "id": "s004",
+   "text": "đổ xăng 80k",
+   "expected": [
+    {
+     "amount": 80000,
+     "category": "Di lai"
+    }
+   ],
+   "tags": [
+    "basic"
+   ]
+  },
+  {
+   "id": "s005",
+   "text": "bánh mì 25.000đ",
+   "expected": [
+    {
+     "amount": 25000,
+     "category": "An uong"
+    }
+   ],
+   "tags": [
+    "basic"
+   ]
+  },
+  {
+   "id": "s006",
+   "text": "ăn trưa 45 nghìn",
+   "expected": [
+    {
+     "amount": 45000,
+     "category": "An uong"
+    }
+   ],
+   "tags": [
+    "basic"
+   ]
+  },
+  {
+   "id": "s007",
+   "text": "trà sữa 35k",
+   "expected": [
+    {
+     "amount": 35000,
+     "category": "An uong"
+    }
+   ],
+   "tags": [
+    "basic"
+   ]
+  },
+  {
+   "id": "s008",
+   "text": "chợ 120k",
+   "expected": [
+    {
+     "amount": 120000,
+     "category": "Cho va tap hoa"
+    }
+   ],
+   "tags": [
+    "basic"
+   ]
+  },
+  {
+   "id": "s009",
+   "text": "mua rau 15 nghìn",
+   "expected": [
+    {
+     "amount": 15000,
+     "category": "Cho va tap hoa"
+    }
+   ],
+   "tags": [
+    "basic"
+   ]
+  },
+  {
+   "id": "s010",
+   "text": "cơm tấm 40000",
+   "expected": [
+    {
+     "amount": 40000,
+     "category": "An uong"
+    }
+   ],
+   "tags": [
+    "basic"
+   ]
+  },
+  {
+   "id": "s011",
+   "text": "30k ăn sáng",
+   "expected": [
+    {
+     "amount": 30000,
+     "category": "An uong"
+    }
+   ],
+   "tags": [
+    "amount-first"
+   ]
+  },
+  {
+   "id": "s012",
+   "text": "50k xăng",
+   "expected": [
+    {
+     "amount": 50000,
+     "category": "Di lai"
+    }
+   ],
+   "tags": [
+    "amount-first"
+   ]
+  },
+  {
+   "id": "s013",
+   "text": "grab 62k",
+   "expected": [
+    {
+     "amount": 62000,
+     "category": "Di lai"
+    }
+   ],
+   "tags": [
+    "basic"
+   ]
+  },
+  {
+   "id": "s014",
+   "text": "nước suối 10k",
+   "expected": [
+    {
+     "amount": 10000,
+     "category": "An uong"
+    }
+   ],
+   "tags": [
+    "basic"
+   ]
+  },
+  {
+   "id": "s015",
+   "text": "bún bò 55",
+   "expected": [
+    {
+     "amount": 55000,
+     "category": "An uong"
+    }
+   ],
+   "tags": [
+    "bare"
+   ]
+  },
+  {
+   "id": "s016",
+   "text": "xôi 15",
+   "expected": [
+    {
+     "amount": 15000,
+     "category": "An uong"
+    }
+   ],
+   "tags": [
+    "bare"
+   ]
+  },
+  {
+   "id": "s017",
+   "text": "hủ tiếu 40",
+   "expected": [
+    {
+     "amount": 40000,
+     "category": "An uong"
+    }
+   ],
+   "tags": [
+    "bare"
+   ]
+  },
+  {
+   "id": "s018",
+   "text": "cà phê sữa đá 29",
+   "expected": [
+    {
+     "amount": 29000,
+     "category": "An uong"
+    }
+   ],
+   "tags": [
+    "bare"
+   ]
+  },
+  {
+   "id": "s019",
+   "text": "trà đá 3",
+   "expected": [
+    {
+     "amount": 3000,
+     "category": "An uong"
+    }
+   ],
+   "tags": [
+    "bare"
+   ]
+  },
+  {
+   "id": "s020",
+   "text": "phở 50 xăng 80",
+   "expected": [
+    {
+     "amount": 50000,
+     "category": "An uong"
+    },
+    {
+     "amount": 80000,
+     "category": "Di lai"
+    }
+   ],
+   "tags": [
+    "multi",
+    "no-sep"
+   ]
+  },
+  {
+   "id": "s021",
+   "text": "cf 30k, gửi xe 5k",
+   "expected": [
+    {
+     "amount": 30000,
+     "category": "An uong"
+    },
+    {
+     "amount": 5000,
+     "category": "Di lai"
+    }
+   ],
+   "tags": [
+    "multi"
+   ]
+  },
+  {
+   "id": "s022",
+   "text": "bánh mì 20k và nước 10k",
+   "expected": [
+    {
+     "amount": 20000,
+     "category": "An uong"
+    },
+    {
+     "amount": 10000,
+     "category": "An uong"
+    }
+   ],
+   "tags": [
+    "multi"
+   ]
+  },
+  {
+   "id": "s023",
+   "text": "ăn sáng 30k, cf 25k, trưa 45k",
+   "expected": [
+    {
+     "amount": 30000,
+     "category": "An uong"
+    },
+    {
+     "amount": 25000,
+     "category": "An uong"
+    },
+    {
+     "amount": 45000,
+     "category": "An uong"
+    }
+   ],
+   "tags": [
+    "multi"
+   ]
+  },
+  {
+   "id": "s024",
+   "text": "chợ 150k + trái cây 60k",
+   "expected": [
+    {
+     "amount": 150000,
+     "category": "Cho va tap hoa"
+    },
+    {
+     "amount": 60000,
+     "category": "Cho va tap hoa"
+    }
+   ],
+   "tags": [
+    "multi"
+   ]
+  },
+  {
+   "id": "s025",
+   "text": "xăng 70k; rửa xe 40k",
+   "expected": [
+    {
+     "amount": 70000,
+     "category": "Di lai"
+    },
+    {
+     "amount": 40000,
+     "category": "Di lai"
+    }
+   ],
+   "tags": [
+    "multi"
+   ]
+  },
+  {
+   "id": "s026",
+   "text": "bún 35 trà đá 3 gửi xe 4",
+   "expected": [
+    {
+     "amount": 35000,
+     "category": "An uong"
+    },
+    {
+     "amount": 3000,
+     "category": "An uong"
+    },
+    {
+     "amount": 4000,
+     "category": "Di lai"
+    }
+   ],
+   "tags": [
+    "multi",
+    "no-sep",
+    "bare"
+   ]
+  },
+  {
+   "id": "s027",
+   "text": "sáng phở 45, trưa cơm 35, tối bún 40",
+   "expected": [
+    {
+     "amount": 45000,
+     "category": "An uong"
+    },
+    {
+     "amount": 35000,
+     "category": "An uong"
+    },
+    {
+     "amount": 40000,
+     "category": "An uong"
+    }
+   ],
+   "tags": [
+    "multi"
+   ]
+  },
+  {
+   "id": "s028",
+   "text": "grab đi làm 55k rồi grab về 60k",
+   "expected": [
+    {
+     "amount": 55000,
+     "category": "Di lai"
+    },
+    {
+     "amount": 60000,
+     "category": "Di lai"
+    }
+   ],
+   "tags": [
+    "multi"
+   ]
+  },
+  {
+   "id": "s029",
+   "text": "thịt 80k, cá 65k, rau 20k",
+   "expected": [
+    {
+     "amount": 80000,
+     "category": "Cho va tap hoa"
+    },
+    {
+     "amount": 65000,
+     "category": "Cho va tap hoa"
+    },
+    {
+     "amount": 20000,
+     "category": "Cho va tap hoa"
+    }
+   ],
+   "tags": [
+    "multi"
+   ]
+  },
+  {
+   "id": "s030",
+   "text": "1tr2 tiền điện",
+   "expected": [
+    {
+     "amount": 1200000,
+     "category": "Khac"
+    }
+   ],
+   "tags": [
+    "millions"
+   ]
+  },
+  {
+   "id": "s031",
+   "text": "tiền nhà 3tr",
+   "expected": [
+    {
+     "amount": 3000000,
+     "category": "Khac"
+    }
+   ],
+   "tags": [
+    "millions"
+   ]
+  },
+  {
+   "id": "s032",
+   "text": "học tiếng anh 2 triệu",
+   "expected": [
+    {
+     "amount": 2000000,
+     "category": "Khac"
+    }
+   ],
+   "tags": [
+    "millions"
+   ]
+  },
+  {
+   "id": "s033",
+   "text": "mua giày 1.5tr",
+   "expected": [
+    {
+     "amount": 1500000,
+     "category": "Mua sam"
+    }
+   ],
+   "tags": [
+    "millions"
+   ]
+  },
+  {
+   "id": "s034",
+   "text": "đi siêu thị 1 triệu 2",
+   "expected": [
+    {
+     "amount": 1200000,
+     "category": "Cho va tap hoa"
+    }
+   ],
+   "tags": [
+    "millions"
+   ]
+  },
+  {
+   "id": "s035",
+   "text": "áo khoác 850k",
+   "expected": [
+    {
+     "amount": 850000,
+     "category": "Mua sam"
+    }
+   ],
+   "tags": [
+    "basic"
+   ]
+  },
+  {
+   "id": "s036",
+   "text": "sửa xe 1tr5",
+   "expected": [
+    {
+     "amount": 1500000,
+     "category": "Di lai"
+    }
+   ],
+   "tags": [
+    "millions"
+   ]
+  },
+  {
+   "id": "s037",
+   "text": "nửa triệu tiền chợ",
+   "expected": [
+    {
+     "amount": 500000,
+     "category": "Cho va tap hoa"
+    }
+   ],
+   "tags": [
+    "word-number"
+   ]
+  },
+  {
+   "id": "s038",
+   "text": "đổ xăng năm chục",
+   "expected": [
+    {
+     "amount": 50000,
+     "category": "Di lai"
+    }
+   ],
+   "tags": [
+    "word-number"
+   ]
+  },
+  {
+   "id": "s039",
+   "text": "cf hai lăm nghìn",
+   "expected": [
+    {
+     "amount": 25000,
+     "category": "An uong"
+    }
+   ],
+   "tags": [
+    "word-number"
+   ]
+  },
+  {
+   "id": "s040",
+   "text": "ăn trưa ba chục",
+   "expected": [
+    {
+     "amount": 30000,
+     "category": "An uong"
+    }
+   ],
+   "tags": [
+    "word-number"
+   ]
+  },
+  {
+   "id": "s041",
+   "text": "gửi xe năm nghìn",
+   "expected": [
+    {
+     "amount": 5000,
+     "category": "Di lai"
+    }
+   ],
+   "tags": [
+    "word-number"
+   ]
+  },
+  {
+   "id": "s042",
+   "text": "mua thuốc một trăm hai",
+   "expected": [
+    {
+     "amount": 120000,
+     "category": "Khac"
+    }
+   ],
+   "tags": [
+    "word-number"
+   ]
+  },
+  {
+   "id": "s043",
+   "text": "tiền chợ hai trăm",
+   "expected": [
+    {
+     "amount": 200000,
+     "category": "Cho va tap hoa"
+    }
+   ],
+   "tags": [
+    "word-number"
+   ]
+  },
+  {
+   "id": "s044",
+   "text": "bánh mì mười lăm nghìn",
+   "expected": [
+    {
+     "amount": 15000,
+     "category": "An uong"
+    }
+   ],
+   "tags": [
+    "word-number"
+   ]
+  },
+  {
+   "id": "s045",
+   "text": "đi chợ hết một lít",
+   "expected": [
+    {
+     "amount": 100000,
+     "category": "Cho va tap hoa"
+    }
+   ],
+   "tags": [
+    "slang"
+   ]
+  },
+  {
+   "id": "s046",
+   "text": "nhậu hai xị",
+   "expected": [
+    {
+     "amount": 200000,
+     "category": "An uong"
+    }
+   ],
+   "tags": [
+    "slang"
+   ]
+  },
+  {
+   "id": "s047",
+   "text": "trà sữa 2 ly 70k",
+   "expected": [
+    {
+     "amount": 70000,
+     "category": "An uong"
+    }
+   ],
+   "tags": [
+    "quantity"
+   ]
+  },
+  {
+   "id": "s048",
+   "text": "mua 3 hộp sữa 45k",
+   "expected": [
+    {
+     "amount": 45000,
+     "category": "Cho va tap hoa"
+    }
+   ],
+   "tags": [
+    "quantity"
+   ]
+  },
+  {
+   "id": "s049",
+   "text": "bia 6 lon 120k",
+   "expected": [
+    {
+     "amount": 120000,
+     "category": "An uong"
+    }
+   ],
+   "tags": [
+    "quantity"
+   ]
+  },
+  {
+   "id": "s050",
+   "text": "trứng 10 quả 35k",
+   "expected": [
+    {
+     "amount": 35000,
+     "category": "Cho va tap hoa"
+    }
+   ],
+   "tags": [
+    "quantity"
+   ]
+  },
+  {
+   "id": "s051",
+   "text": "cf 25k x2",
+   "expected": [
+    {
+     "amount": 50000,
+     "category": "An uong"
+    }
+   ],
+   "tags": [
+    "multiply"
+   ]
+  },
+  {
+   "id": "s052",
+   "text": "gửi xe 5k x 2",
+   "expected": [
+    {
+     "amount": 10000,
+     "category": "Di lai"
+    }
+   ],
+   "tags": [
+    "multiply"
+   ]
+  },
+  {
+   "id": "s053",
+   "text": "vé xe buýt 7k 2 lần",
+   "expected": [
+    {
+     "amount": 14000,
+     "category": "Di lai"
+    }
+   ],
+   "tags": [
+    "multiply"
+   ]
+  },
+  {
+   "id": "s054",
+   "text": "mua rau 15 nghìn rưỡi",
+   "expected": [
+    {
+     "amount": 15500,
+     "category": "Cho va tap hoa"
+    }
+   ],
+   "tags": [
+    "half"
+   ]
+  },
+  {
+   "id": "s055",
+   "text": "cơm 2 chục rưỡi",
+   "expected": [
+    {
+     "amount": 25000,
+     "category": "An uong"
+    }
+   ],
+   "tags": [
+    "word-number",
+    "half"
+   ]
+  },
+  {
+   "id": "s056",
+   "text": "tiền điện 400k ck",
+   "expected": [
+    {
+     "amount": 400000,
+     "category": "Khac"
+    }
+   ],
+   "tags": [
+    "bank"
+   ]
+  },
+  {
+   "id": "s057",
+   "text": "mua áo 300k quẹt thẻ",
+   "expected": [
+    {
+     "amount": 300000,
+     "category": "Mua sam"
+    }
+   ],
+   "tags": [
+    "bank"
+   ]
+  },
+  {
+   "id": "s058",
+   "text": "chuyển khoản tiền học 1tr",
+   "expected": [
+    {
+     "amount": 1000000,
+     "category": "Khac"
+    }
+   ],
+   "tags": [
+    "bank"
+   ]
+  },
+  {
+   "id": "s059",
+   "text": "cf 30k trả tiền mặt",
+   "expected": [
+    {
+     "amount": 30000,
+     "category": "An uong"
+    }
+   ],
+   "tags": [
+    "cash"
+   ]
+  },
+  {
+   "id": "s060",
+   "text": "ăn sáng 30k, mượn bạn 100k",
+   "expected": [
+    {
+     "amount": 30000,
+     "category": "An uong"
+    }
+   ],
+   "tags": [
+    "exclusion"
+   ]
+  },
+  {
+   "id": "s061",
+   "text": "đi chợ 200k, được trả lại 20k",
+   "expected": [
+    {
+     "amount": 200000,
+     "category": "Cho va tap hoa"
+    }
+   ],
+   "tags": [
+    "exclusion"
+   ]
+  },
+  {
+   "id": "s062",
+   "text": "mua đồ 150k nhưng hoàn tiền rồi",
+   "expected": [],
+   "tags": [
+    "exclusion",
+    "empty"
+   ]
+  },
+  {
+   "id": "s063",
+   "text": "hôm nay không tiêu gì",
+   "expected": [],
+   "tags": [
+    "empty"
+   ]
+  },
+  {
+   "id": "s064",
+   "text": "nay ăn ở nhà",
+   "expected": [],
+   "tags": [
+    "empty"
+   ]
+  },
+  {
+   "id": "s065",
+   "text": "cf",
+   "expected": [],
+   "tags": [
+    "empty"
+   ]
+  },
+  {
+   "id": "s066",
+   "text": "50k",
+   "expected": [
+    {
+     "amount": 50000,
+     "category": "Khac"
+    }
+   ],
+   "tags": [
+    "no-label"
+   ]
+  },
+  {
+   "id": "s067",
+   "text": "gửi xe 5k sáng 5k chiều",
+   "expected": [
+    {
+     "amount": 5000,
+     "category": "Di lai"
+    },
+    {
+     "amount": 5000,
+     "category": "Di lai"
+    }
+   ],
+   "tags": [
+    "multi",
+    "tricky"
+   ]
+  },
+  {
+   "id": "s068",
+   "text": "phở bò tái 2 tô 110k",
+   "expected": [
+    {
+     "amount": 110000,
+     "category": "An uong"
+    }
+   ],
+   "tags": [
+    "quantity"
+   ]
+  },
+  {
+   "id": "s069",
+   "text": "Highlands 59k",
+   "expected": [
+    {
+     "amount": 59000,
+     "category": "An uong"
+    }
+   ],
+   "tags": [
+    "brand"
+   ]
+  },
+  {
+   "id": "s070",
+   "text": "Phúc Long 55k, bánh 35k",
+   "expected": [
+    {
+     "amount": 55000,
+     "category": "An uong"
+    },
+    {
+     "amount": 35000,
+     "category": "An uong"
+    }
+   ],
+   "tags": [
+    "multi",
+    "brand"
+   ]
+  },
+  {
+   "id": "s071",
+   "text": "shopee 249k",
+   "expected": [
+    {
+     "amount": 249000,
+     "category": "Mua sam"
+    }
+   ],
+   "tags": [
+    "brand"
+   ]
+  },
+  {
+   "id": "s072",
+   "text": "winmart 312.000đ",
+   "expected": [
+    {
+     "amount": 312000,
+     "category": "Cho va tap hoa"
+    }
+   ],
+   "tags": [
+    "brand"
+   ]
+  },
+  {
+   "id": "s073",
+   "text": "xanh sm 48k",
+   "expected": [
+    {
+     "amount": 48000,
+     "category": "Di lai"
+    }
+   ],
+   "tags": [
+    "brand"
+   ]
+  },
+  {
+   "id": "s074",
+   "text": "lẩu với bạn 200k mình trả hết",
+   "expected": [
+    {
+     "amount": 200000,
+     "category": "An uong"
+    }
+   ],
+   "tags": [
+    "tricky"
+   ]
+  },
+  {
+   "id": "s075",
+   "text": "sinh nhật bạn góp 100k",
+   "expected": [
+    {
+     "amount": 100000,
+     "category": "Khac"
+    }
+   ],
+   "tags": [
+    "tricky"
+   ]
+  },
+  {
+   "id": "s076",
+   "text": "cắt tóc 60k",
+   "expected": [
+    {
+     "amount": 60000,
+     "category": "Khac"
+    }
+   ],
+   "tags": [
+    "basic"
+   ]
+  },
+  {
+   "id": "s077",
+   "text": "mua sách 120k",
+   "expected": [
+    {
+     "amount": 120000,
+     "category": "Mua sam"
+    }
+   ],
+   "tags": [
+    "basic"
+   ]
+  },
+  {
+   "id": "s078",
+   "text": "nạp game 50k",
+   "expected": [
+    {
+     "amount": 50000,
+     "category": "Khac"
+    }
+   ],
+   "tags": [
+    "basic"
+   ]
+  },
+  {
+   "id": "s079",
+   "text": "đi bơi 30k",
+   "expected": [
+    {
+     "amount": 30000,
+     "category": "Khac"
+    }
+   ],
+   "tags": [
+    "basic"
+   ]
+  },
+  {
+   "id": "s080",
+   "text": "quà mẹ 500k",
+   "expected": [
+    {
+     "amount": 500000,
+     "category": "Mua sam"
+    }
+   ],
+   "tags": [
+    "basic"
+   ]
+  },
+  {
+   "id": "s081",
+   "text": "pho 50 xang 80",
+   "expected": [
+    {
+     "amount": 50000,
+     "category": "An uong"
+    },
+    {
+     "amount": 80000,
+     "category": "Di lai"
+    }
+   ],
+   "tags": [
+    "no-diacritics",
+    "multi"
+   ]
+  },
+  {
+   "id": "s082",
+   "text": "an sang 30k",
+   "expected": [
+    {
+     "amount": 30000,
+     "category": "An uong"
+    }
+   ],
+   "tags": [
+    "no-diacritics"
+   ]
+  },
+  {
+   "id": "s083",
+   "text": "gui xe 5k cf 25k",
+   "expected": [
+    {
+     "amount": 5000,
+     "category": "Di lai"
+    },
+    {
+     "amount": 25000,
+     "category": "An uong"
+    }
+   ],
+   "tags": [
+    "no-diacritics",
+    "multi"
+   ]
+  },
+  {
+   "id": "s084",
+   "text": "tra sua 40",
+   "expected": [
+    {
+     "amount": 40000,
+     "category": "An uong"
+    }
+   ],
+   "tags": [
+    "no-diacritics",
+    "bare"
+   ]
+  },
+  {
+   "id": "s085",
+   "text": "cho 100k",
+   "expected": [
+    {
+     "amount": 100000,
+     "category": "Cho va tap hoa"
+    }
+   ],
+   "tags": [
+    "no-diacritics"
+   ]
+  },
+  {
+   "id": "s086",
+   "text": "ăn tối 120.000",
+   "expected": [
+    {
+     "amount": 120000,
+     "category": "An uong"
+    }
+   ],
+   "tags": [
+    "basic"
+   ]
+  },
+  {
+   "id": "s087",
+   "text": "cafe 32,000",
+   "expected": [
+    {
+     "amount": 32000,
+     "category": "An uong"
+    }
+   ],
+   "tags": [
+    "basic"
+   ]
+  },
+  {
+   "id": "s088",
+   "text": "bún chả 45.000 đồng",
+   "expected": [
+    {
+     "amount": 45000,
+     "category": "An uong"
+    }
+   ],
+   "tags": [
+    "basic"
+   ]
+  },
+  {
+   "id": "s089",
+   "text": "nước mía 10 ngàn",
+   "expected": [
+    {
+     "amount": 10000,
+     "category": "An uong"
+    }
+   ],
+   "tags": [
+    "basic"
+   ]
+  },
+  {
+   "id": "s090",
+   "text": "bánh tráng trộn 20 ng",
+   "expected": [
+    {
+     "amount": 20000,
+     "category": "An uong"
+    }
+   ],
+   "tags": [
+    "basic"
+   ]
+  },
+  {
+   "id": "s091",
+   "text": "ăn vặt 2k5",
+   "expected": [
+    {
+     "amount": 2500,
+     "category": "An uong"
+    }
+   ],
+   "tags": [
+    "tricky"
+   ]
+  },
+  {
+   "id": "s092",
+   "text": "vé gửi xe tháng 150k",
+   "expected": [
+    {
+     "amount": 150000,
+     "category": "Di lai"
+    }
+   ],
+   "tags": [
+    "basic"
+   ]
+  },
+  {
+   "id": "s093",
+   "text": "thay nhớt 120k",
+   "expected": [
+    {
+     "amount": 120000,
+     "category": "Di lai"
+    }
+   ],
+   "tags": [
+    "basic"
+   ]
+  },
+  {
+   "id": "s094",
+   "text": "tiền chợ tuần 600k",
+   "expected": [
+    {
+     "amount": 600000,
+     "category": "Cho va tap hoa"
+    }
+   ],
+   "tags": [
+    "basic"
+   ]
+  },
+  {
+   "id": "s095",
+   "text": "mua dầu gội 89k",
+   "expected": [
+    {
+     "amount": 89000,
+     "category": "Cho va tap hoa"
+    }
+   ],
+   "tags": [
+    "basic"
+   ]
+  },
+  {
+   "id": "s096",
+   "text": "khám răng 300k",
+   "expected": [
+    {
+     "amount": 300000,
+     "category": "Khac"
+    }
+   ],
+   "tags": [
+    "basic"
+   ]
+  },
+  {
+   "id": "s097",
+   "text": "tiền mạng 220k ck",
+   "expected": [
+    {
+     "amount": 220000,
+     "category": "Khac"
+    }
+   ],
+   "tags": [
+    "bank"
+   ]
+  },
+  {
+   "id": "s098",
+   "text": "ăn sáng 25 ăn trưa 40 ăn tối 60",
+   "expected": [
+    {
+     "amount": 25000,
+     "category": "An uong"
+    },
+    {
+     "amount": 40000,
+     "category": "An uong"
+    },
+    {
+     "amount": 60000,
+     "category": "An uong"
+    }
+   ],
+   "tags": [
+    "multi",
+    "no-sep",
+    "bare"
+   ]
+  },
+  {
+   "id": "s099",
+   "text": "cf 29k với bánh 25k rồi gửi xe 3k",
+   "expected": [
+    {
+     "amount": 29000,
+     "category": "An uong"
+    },
+    {
+     "amount": 25000,
+     "category": "An uong"
+    },
+    {
+     "amount": 3000,
+     "category": "Di lai"
+    }
+   ],
+   "tags": [
+    "multi"
+   ]
+  },
+  {
+   "id": "s100",
+   "text": "taxi về quê 350k",
+   "expected": [
+    {
+     "amount": 350000,
+     "category": "Di lai"
+    }
+   ],
+   "tags": [
+    "basic"
+   ]
+  }
+ ]
+}

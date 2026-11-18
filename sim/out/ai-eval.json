@@ -1,0 +1,40 @@
+{
+  "run_at": "2026-11-18T09:29:20.784Z",
+  "set": "all",
+  "cases": 100,
+  "note": "Synthetic sentences unless set=real",
+  "gemini": "skipped (no GEMINI_API_KEY or --rules-only)",
+  "rules": {
+    "cases": 100,
+    "exact_sentence_pct": 84,
+    "item_recall_pct": 89,
+    "item_precision_pct": 92.9,
+    "category_pct_of_matched": 93.3,
+    "missed_items": 13,
+    "extra_items": 8,
+    "errors": 0,
+    "latency_ms_p50": 0,
+    "latency_ms_p95": 0,
+    "exact_by_tag": {
+      "basic": "29/29",
+      "amount-first": "2/2",
+      "bare": "8/8",
+      "multi": "16/16",
+      "no-sep": "3/3",
+      "millions": "5/6",
+      "word-number": "0/9",
+      "slang": "0/2",
+      "quantity": "5/5",
+      "multiply": "2/3",
+      "half": "1/2",
+      "bank": "4/4",
+      "cash": "1/1",
+      "exclusion": "0/3",
+      "empty": "3/4",
+      "no-label": "1/1",
+      "tricky": "4/4",
+      "brand": "5/5",
+      "no-diacritics": "5/5"
+    }
+  }
+}

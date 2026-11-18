@@ -1,0 +1,18 @@
+{
+ "note": "REAL sentences: ask friends to type how they note spending, then fill expected amounts yourself. Keep who typed it out of the file.",
+ "cases": [
+  {
+   "id": "r001",
+   "text": "(câu bạn bè gõ)",
+   "expected": [
+    {
+     "amount": 0,
+     "category": "Khac"
+    }
+   ],
+   "tags": [
+    "real"
+   ]
+  }
+ ]
+}

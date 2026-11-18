@@ -1,0 +1,33 @@
+{
+  "base": "http://localhost:3000",
+  "run_at": "2026-11-18T09:36:19.510Z",
+  "node": "v22.23.4",
+  "cpu": "Intel(R) Xeon(R) Processor @ 2.10GHz",
+  "cores": 2,
+  "database": "PGlite local (see server env)",
+  "nfr01_card_api_ms": {
+    "n": 300,
+    "p50": 10,
+    "p95": 16,
+    "max": 23
+  },
+  "nfr02_payment_total_ms": {
+    "n": 200,
+    "p50": 21,
+    "p95": 30,
+    "max": 39
+  },
+  "nfr02_payment_write_ms": {
+    "n": 200,
+    "p50": 8,
+    "p95": 14,
+    "max": 25
+  },
+  "nfr02_engine_added_ms": {
+    "n": 200,
+    "p50": 8,
+    "p95": 12,
+    "max": 13
+  },
+  "engine_timeouts": 0
+}

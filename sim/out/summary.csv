@@ -1,0 +1,4 @@
+persona,days,days_used_up,days_exhausted,min_allowance,max_allowance,spending_total,bills_total,goal,end_left,goal_kept
+trang,30,9,0,102000,198000,3262000,3600000,1000000,138000,true
+khoa,30,15,9,0,87000,3331000,100000,500000,-831000,false
+hanh,30,6,0,123000,2778000,4226000,3200000,2000000,2574000,true
