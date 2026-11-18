@@ -90,3 +90,13 @@ export function goodNews(yesterday: DayResult, sentDates: string[], today: strin
   if (recent >= 2) return null;
   return { saved: floor1000(saved) };
 }
+
+/**
+ * BR14 (added in Part 3): when the card was "used up" (or the budget exhausted) on at least
+ * four of the last seven days, offer a budget review. `history` is monthHistory up to today.
+ */
+export function offerBudgetReview(history: DayResult[], today: string): boolean {
+  const from = addDays(today, -7);
+  const past = history.filter((d) => d.date >= from && d.date < today);
+  return past.filter((d) => d.state === 'usedup' || d.state === 'exhausted').length >= 4;
+}

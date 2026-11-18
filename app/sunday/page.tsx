@@ -42,6 +42,7 @@ export default function Sunday() {
       <p className="num text-body text-ink2">
         {e === 0 ? 'Tuần tới MoMo không giữ thêm khoản nào cho chi tiêu ngoài MoMo.' : `Tuần tới, mỗi ngày MoMo giữ lại khoảng ${vnd(e)} cho các khoản này, để số tiền tiêu hôm nay không cao hơn thực tế.`}
       </p>
+      <p className="text-desc text-hint">Nếu bỏ qua tuần này, MoMo không giữ thêm khoản nào cho chi tiêu ngoài MoMo (0đ mỗi ngày) cho tới Chủ nhật sau.</p>
       {err && <ErrorNote message={err} />}
       <div className="flex gap-2.5">
         <SecondaryButton onClick={() => save(true)}>Bỏ qua tuần này</SecondaryButton>

@@ -3,6 +3,7 @@ import {
   allowanceFormula, computeDay, goodNews, isEligible, reserveFor, suggestBudget, PRESET_BUDGETS,
   tomorrowEstimate, validateGoal, vnDate, floor1000, vnd,
 } from '../../lib/engine';
+import { offerBudgetReview } from '../../lib/engine/allowance';
 import { part2Plan, tx } from './helpers';
 
 const plan = part2Plan();
@@ -200,5 +201,17 @@ describe('FR01 keeps recurring bills in the suggestion', () => {
       t.push(tx(`${m}-05`, 3_000_000, 'manual', { billId: 'rent' }));
     }
     expect(suggestBudget(t, '2026-11-01')).toBe(6_000_000);
+  });
+});
+
+describe('BR14 budget review offer (added in Part 3)', () => {
+  const day = (date: string, state: 'normal' | 'usedup') => ({ date, state }) as never;
+  it('is offered after four used-up days in the last seven', () => {
+    const h = ['2026-11-04', '2026-11-05', '2026-11-06', '2026-11-07', '2026-11-08', '2026-11-09', '2026-11-10'].map((d, i) => day(d, i < 4 ? 'usedup' : 'normal'));
+    expect(offerBudgetReview(h, '2026-11-11')).toBe(true);
+  });
+  it('is not offered after three used-up days', () => {
+    const h = ['2026-11-08', '2026-11-09', '2026-11-10'].map((d) => day(d, 'usedup'));
+    expect(offerBudgetReview(h, '2026-11-11')).toBe(false);
   });
 });

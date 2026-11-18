@@ -30,8 +30,8 @@ export default function Settings() {
     catch (e) { setErr((e as Error).message); }
   }
   const rows = [
-    { label: 'Ngân sách tháng', value: budget, hint: 'Mỗi lần bấm thay đổi 500.000đ', dec: () => setBudget(Math.max(goal * 2, budget - STEP)), inc: () => setBudget(budget + STEP) },
-    { label: 'Để dành trước', value: goal, hint: `Tối đa một nửa ngân sách: ${vnd(budget / 2)}`, dec: () => setGoal(Math.max(0, goal - STEP)), inc: () => setGoal(Math.min(budget / 2, goal + STEP)) },
+    { label: 'Ngân sách tháng', value: budget, set: setBudget, hint: 'Gõ số hoặc bấm để thay đổi 500.000đ', dec: () => setBudget(Math.max(goal * 2, budget - STEP)), inc: () => setBudget(budget + STEP) },
+    { label: 'Để dành trước', value: goal, set: setGoal, hint: `Tối đa một nửa ngân sách: ${vnd(budget / 2)}`, dec: () => setGoal(Math.max(0, goal - STEP)), inc: () => setGoal(Math.min(budget / 2, goal + STEP)) },
   ];
 
   return (
@@ -43,7 +43,8 @@ export default function Settings() {
             <div key={r.label} className="flex items-center gap-2.5 border-b border-line py-3">
               <span className="flex flex-1 flex-col">
                 <span className="text-desc text-hint">{r.label}</span>
-                <span className="num text-header-m font-bold">{vnd(r.value)}</span>
+                <input aria-label={r.label} inputMode="numeric" value={vnd(r.value)} onChange={(e) => r.set(Number(e.target.value.replace(/\D/g, '')) || 0)}
+                  className="num w-full border-b border-dashed border-line2 bg-transparent text-header-m font-bold focus:border-primary focus:outline-none" />
                 <span className="num text-desc text-hint">{r.hint}</span>
               </span>
               <button type="button" aria-label={`Giảm ${r.label.toLowerCase()}`} onClick={r.dec} className="h-11 w-11 rounded-m border border-line2 text-[20px] font-semibold">−</button>

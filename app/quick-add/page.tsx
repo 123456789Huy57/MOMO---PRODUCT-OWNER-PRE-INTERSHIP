@@ -102,7 +102,7 @@ export default function QuickAdd() {
               <div className="flex items-center justify-between">
                 <span className="text-header-s font-semibold">Kiểm tra trước khi thêm</span>
                 <span className={`rounded-full px-2 py-0.5 text-desc-xs font-semibold ${result.source === 'gemini' ? 'bg-tonal text-pinkdeep' : 'bg-page text-hint'}`}>
-                  {result.source === 'gemini' ? 'AI đề xuất' : 'Đọc bằng luật'}
+                  {result.source === 'gemini' ? 'AI đề xuất' : 'Đọc nhanh, hãy kiểm tra kỹ'}
                 </span>
               </div>
               {rows.length === 0 && <p className="text-body text-hint">Không tìm thấy khoản chi nào. Hãy ghi kèm số tiền, ví dụ "phở 50".</p>}

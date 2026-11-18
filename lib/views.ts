@@ -1,7 +1,7 @@
 import type { Ctx } from './data';
 import { db, today } from './data';
 import {
-  addDays, computeDay, dayOfMonth, isEligible, monthHistory, reserveFor, spendingEffect,
+  addDays, computeDay, dayOfMonth, isEligible, monthHistory, offerBudgetReview, reserveFor, spendingEffect,
   tomorrowEstimate, unpaidBills, vnDate, weekday, RANGE_MIDPOINT,
 } from './engine';
 
@@ -30,7 +30,11 @@ export function overview(ctx: Ctx) {
     user: { id: ctx.user.id, name: ctx.user.display_name, note: ctx.user.persona_note },
     now: ctx.now.toISOString(),
     todayDate: ctx.today,
-    card: { ...t, tomorrow: t.state === 'usedup' ? tomorrowEstimate(ctx.plan, ctx.txs, ctx.estimates, ctx.today) : null },
+    card: {
+      ...t,
+      tomorrow: t.state === 'usedup' ? tomorrowEstimate(ctx.plan, ctx.txs, ctx.estimates, ctx.today) : null,
+      reviewOffer: !!ctx.plan && t.state !== 'exhausted' && offerBudgetReview(monthHistory(ctx.plan, ctx.txs, ctx.estimates, ctx.today), ctx.today),
+    },
     eligible: isEligible(ctx.txs, ctx.today),
     month: ctx.plan ? { budget: ctx.plan.budget, goal: ctx.plan.goal, spent: spentMonth } : null,
     upcoming: upcoming.map((b) => ({ name: b.name, dueDay: b.dueDay, amount: b.amount })),

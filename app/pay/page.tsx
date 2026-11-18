@@ -79,9 +79,6 @@ export default function Pay() {
           Khu vực ưu đãi hiện có của màn hình này, giữ nguyên vị trí
         </div>
 
-        <p className="num mx-4 mt-3 text-desc text-hint">
-          Đo trong prototype: thanh toán {done.timing.paymentMs} ms, engine {done.timing.engineMs} ms{done.timedOut ? ', quá 300 ms nên dòng tiền tiêu được ẩn (NFR03)' : ''}.
-        </p>
 
         <div className="mt-auto flex gap-2.5 p-4">
           <SecondaryButton href="/">Về trang chủ</SecondaryButton>

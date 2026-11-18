@@ -30,7 +30,7 @@ const THEME: Record<CardState, { box: string; line: string; chip: string; track:
 };
 
 export interface CardData {
-  state: CardState; allowance: number; remaining: number; spentToday: number; D: number; date: string; tomorrow?: number | null;
+  state: CardState; allowance: number; remaining: number; spentToday: number; D: number; date: string; tomorrow?: number | null; reviewOffer?: boolean;
 }
 
 export default function AllowanceCard({ data, trackView = true }: { data: CardData; trackView?: boolean }) {
@@ -81,6 +81,12 @@ export default function AllowanceCard({ data, trackView = true }: { data: CardDa
               Phần tiêu thêm đã được chia đều cho các ngày còn lại.
             </span>
           </div>
+        )}
+        {data.reviewOffer && data.state !== 'exhausted' && (
+          <Link href="/settings" className="flex items-center justify-between gap-2 rounded-s bg-white/90 px-3 py-2 text-desc text-ink">
+            <span>Bạn đã tiêu quá phần trong ngày nhiều lần tuần này. Xem lại ngân sách tháng?</span>
+            <span className="shrink-0 font-bold text-pinkdeep">Xem lại</span>
+          </Link>
         )}
 
         {data.state === 'exhausted' && (
