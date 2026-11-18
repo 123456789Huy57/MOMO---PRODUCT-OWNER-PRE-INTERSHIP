@@ -1,0 +1,1364 @@
+[
+{
+"id": "s001",
+"source": "gemini",
+"model": "gemini-3.1-flash-lite",
+"latencyMs": 3072,
+"fallbackReason": null,
+"items": [
+{
+"amount": 50000,
+"category": "An uong"
+}
+]
+},
+{
+"id": "s002",
+"source": "gemini",
+"model": "gemini-3.1-flash-lite",
+"latencyMs": 2235,
+"fallbackReason": null,
+"items": [
+{
+"amount": 30000,
+"category": "An uong"
+}
+]
+},
+{
+"id": "s003",
+"source": "rules",
+"model": null,
+"latencyMs": 747,
+"fallbackReason": "http_503",
+"items": [
+{
+"amount": 5000,
+"category": "Di lai"
+}
+]
+},
+{
+"id": "s004",
+"source": "gemini",
+"model": "gemini-3.1-flash-lite",
+"latencyMs": 2561,
+"fallbackReason": null,
+"items": [
+{
+"amount": 80000,
+"category": "Di lai"
+}
+]
+},
+{
+"id": "s005",
+"source": "gemini",
+"model": "gemini-3.1-flash-lite",
+"latencyMs": 2862,
+"fallbackReason": null,
+"items": [
+{
+"amount": 25000,
+"category": "An uong"
+}
+]
+},
+{
+"id": "s006",
+"source": "gemini",
+"model": "gemini-3.1-flash-lite",
+"latencyMs": 771,
+"fallbackReason": null,
+"items": [
+{
+"amount": 45000,
+"category": "An uong"
+}
+]
+},
+{
+"id": "s007",
+"source": "gemini",
+"model": "gemini-3.1-flash-lite",
+"latencyMs": 675,
+"fallbackReason": null,
+"items": [
+{
+"amount": 35000,
+"category": "An uong"
+}
+]
+},
+{
+"id": "s008",
+"source": "gemini",
+"model": "gemini-3.1-flash-lite",
+"latencyMs": 661,
+"fallbackReason": null,
+"items": [
+{
+"amount": 120000,
+"category": "Cho va tap hoa"
+}
+]
+},
+{
+"id": "s009",
+"source": "gemini",
+"model": "gemini-3.1-flash-lite",
+"latencyMs": 745,
+"fallbackReason": null,
+"items": [
+{
+"amount": 15000,
+"category": "Cho va tap hoa"
+}
+]
+},
+{
+"id": "s010",
+"source": "gemini",
+"model": "gemini-3.1-flash-lite",
+"latencyMs": 2790,
+"fallbackReason": null,
+"items": [
+{
+"amount": 40000,
+"category": "An uong"
+}
+]
+},
+{
+"id": "s011",
+"source": "gemini",
+"model": "gemini-3.1-flash-lite",
+"latencyMs": 2952,
+"fallbackReason": null,
+"items": [
+{
+"amount": 30000,
+"category": "An uong"
+}
+]
+},
+{
+"id": "s012",
+"source": "gemini",
+"model": "gemini-3.1-flash-lite",
+"latencyMs": 3871,
+"fallbackReason": null,
+"items": [
+{
+"amount": 50000,
+"category": "Di lai"
+}
+]
+},
+{
+"id": "s013",
+"source": "gemini",
+"model": "gemini-3.1-flash-lite",
+"latencyMs": 1726,
+"fallbackReason": null,
+"items": [
+{
+"amount": 62000,
+"category": "Di lai"
+}
+]
+},
+{
+"id": "s014",
+"source": "gemini",
+"model": "gemini-3.1-flash-lite",
+"latencyMs": 2350,
+"fallbackReason": null,
+"items": [
+{
+"amount": 10000,
+"category": "An uong"
+}
+]
+},
+{
+"id": "s015",
+"source": "gemini",
+"model": "gemini-3.1-flash-lite",
+"latencyMs": 2563,
+"fallbackReason": null,
+"items": [
+{
+"amount": 55000,
+"category": "An uong"
+}
+]
+},
+{
+"id": "s016",
+"source": "gemini",
+"model": "gemini-3.1-flash-lite",
+"latencyMs": 2787,
+"fallbackReason": null,
+"items": [
+{
+"amount": 15000,
+"category": "An uong"
+}
+]
+},
+{
+"id": "s017",
+"source": "gemini",
+"model": "gemini-3.1-flash-lite",
+"latencyMs": 2648,
+"fallbackReason": null,
+"items": [
+{
+"amount": 40000,
+"category": "An uong"
+}
+]
+},
+{
+"id": "s018",
+"source": "gemini",
+"model": "gemini-3.1-flash-lite",
+"latencyMs": 2251,
+"fallbackReason": null,
+"items": [
+{
+"amount": 29000,
+"category": "An uong"
+}
+]
+},
+{
+"id": "s019",
+"source": "gemini",
+"model": "gemini-3.1-flash-lite",
+"latencyMs": 2896,
+"fallbackReason": null,
+"items": [
+{
+"amount": 3000,
+"category": "An uong"
+}
+]
+},
+{
+"id": "s020",
+"source": "gemini",
+"model": "gemini-3.1-flash-lite",
+"latencyMs": 2084,
+"fallbackReason": null,
+"items": [
+{
+"amount": 50000,
+"category": "An uong"
+},
+{
+"amount": 80000,
+"category": "Di lai"
+}
+]
+},
+{
+"id": "s021",
+"source": "gemini",
+"model": "gemini-3.1-flash-lite",
+"latencyMs": 925,
+"fallbackReason": null,
+"items": [
+{
+"amount": 30000,
+"category": "An uong"
+},
+{
+"amount": 5000,
+"category": "Di lai"
+}
+]
+},
+{
+"id": "s022",
+"source": "gemini",
+"model": "gemini-3.1-flash-lite",
+"latencyMs": 919,
+"fallbackReason": null,
+"items": [
+{
+"amount": 20000,
+"category": "An uong"
+},
+{
+"amount": 10000,
+"category": "An uong"
+}
+]
+},
+{
+"id": "s023",
+"source": "gemini",
+"model": "gemini-3.1-flash-lite",
+"latencyMs": 1164,
+"fallbackReason": null,
+"items": [
+{
+"amount": 30000,
+"category": "An uong"
+},
+{
+"amount": 25000,
+"category": "An uong"
+},
+{
+"amount": 45000,
+"category": "An uong"
+}
+]
+},
+{
+"id": "s024",
+"source": "gemini",
+"model": "gemini-3.1-flash-lite",
+"latencyMs": 827,
+"fallbackReason": null,
+"items": [
+{
+"amount": 150000,
+"category": "Cho va tap hoa"
+},
+{
+"amount": 60000,
+"category": "Cho va tap hoa"
+}
+]
+},
+{
+"id": "s025",
+"source": "gemini",
+"model": "gemini-3.1-flash-lite",
+"latencyMs": 922,
+"fallbackReason": null,
+"items": [
+{
+"amount": 70000,
+"category": "Di lai"
+},
+{
+"amount": 40000,
+"category": "Di lai"
+}
+]
+},
+{
+"id": "s026",
+"source": "gemini",
+"model": "gemini-3.1-flash-lite",
+"latencyMs": 796,
+"fallbackReason": null,
+"items": [
+{
+"amount": 35000,
+"category": "An uong"
+},
+{
+"amount": 3000,
+"category": "An uong"
+},
+{
+"amount": 4000,
+"category": "Di lai"
+}
+]
+},
+{
+"id": "s027",
+"source": "gemini",
+"model": "gemini-3.1-flash-lite",
+"latencyMs": 1045,
+"fallbackReason": null,
+"items": [
+{
+"amount": 45000,
+"category": "An uong"
+},
+{
+"amount": 35000,
+"category": "An uong"
+},
+{
+"amount": 40000,
+"category": "An uong"
+}
+]
+},
+{
+"id": "s028",
+"source": "gemini",
+"model": "gemini-3.1-flash-lite",
+"latencyMs": 799,
+"fallbackReason": null,
+"items": [
+{
+"amount": 55000,
+"category": "Di lai"
+},
+{
+"amount": 60000,
+"category": "Di lai"
+}
+]
+},
+{
+"id": "s029",
+"source": "gemini",
+"model": "gemini-3.1-flash-lite",
+"latencyMs": 802,
+"fallbackReason": null,
+"items": [
+{
+"amount": 80000,
+"category": "Cho va tap hoa"
+},
+{
+"amount": 65000,
+"category": "Cho va tap hoa"
+},
+{
+"amount": 20000,
+"category": "Cho va tap hoa"
+}
+]
+},
+{
+"id": "s030",
+"source": "gemini",
+"model": "gemini-3.1-flash-lite",
+"latencyMs": 914,
+"fallbackReason": null,
+"items": [
+{
+"amount": 1200000,
+"category": "Khac"
+}
+]
+},
+{
+"id": "s031",
+"source": "gemini",
+"model": "gemini-3.1-flash-lite",
+"latencyMs": 945,
+"fallbackReason": null,
+"items": [
+{
+"amount": 3000000,
+"category": "Khac"
+}
+]
+},
+{
+"id": "s032",
+"source": "gemini",
+"model": "gemini-3.1-flash-lite",
+"latencyMs": 809,
+"fallbackReason": null,
+"items": [
+{
+"amount": 2000000,
+"category": "Khac"
+}
+]
+},
+{
+"id": "s033",
+"source": "gemini",
+"model": "gemini-3.1-flash-lite",
+"latencyMs": 843,
+"fallbackReason": null,
+"items": [
+{
+"amount": 1500000,
+"category": "Mua sam"
+}
+]
+},
+{
+"id": "s034",
+"source": "gemini",
+"model": "gemini-3.1-flash-lite",
+"latencyMs": 2872,
+"fallbackReason": null,
+"items": [
+{
+"amount": 1200000,
+"category": "Cho va tap hoa"
+}
+]
+},
+{
+"id": "s035",
+"source": "gemini",
+"model": "gemini-3.1-flash-lite",
+"latencyMs": 736,
+"fallbackReason": null,
+"items": [
+{
+"amount": 850000,
+"category": "Mua sam"
+}
+]
+},
+{
+"id": "s036",
+"source": "gemini",
+"model": "gemini-3.1-flash-lite",
+"latencyMs": 880,
+"fallbackReason": null,
+"items": [
+{
+"amount": 1500000,
+"category": "Di lai"
+}
+]
+},
+{
+"id": "s037",
+"source": "gemini",
+"model": "gemini-3.1-flash-lite",
+"latencyMs": 1770,
+"fallbackReason": null,
+"items": [
+{
+"amount": 500000,
+"category": "Cho va tap hoa"
+}
+]
+},
+{
+"id": "s038",
+"source": "gemini",
+"model": "gemini-3.1-flash-lite",
+"latencyMs": 2269,
+"fallbackReason": null,
+"items": [
+{
+"amount": 50000,
+"category": "Di lai"
+}
+]
+},
+{
+"id": "s039",
+"source": "gemini",
+"model": "gemini-3.1-flash-lite",
+"latencyMs": 3230,
+"fallbackReason": null,
+"items": [
+{
+"amount": 25000,
+"category": "An uong"
+}
+]
+},
+{
+"id": "s040",
+"source": "gemini",
+"model": "gemini-3.1-flash-lite",
+"latencyMs": 3934,
+"fallbackReason": null,
+"items": [
+{
+"amount": 30000,
+"category": "An uong"
+}
+]
+},
+{
+"id": "s041",
+"source": "gemini",
+"model": "gemini-3.1-flash-lite",
+"latencyMs": 2072,
+"fallbackReason": null,
+"items": [
+{
+"amount": 5000,
+"category": "Di lai"
+}
+]
+},
+{
+"id": "s042",
+"source": "gemini",
+"model": "gemini-3.1-flash-lite",
+"latencyMs": 938,
+"fallbackReason": null,
+"items": [
+{
+"amount": 120000,
+"category": "Khac"
+}
+]
+},
+{
+"id": "s043",
+"source": "gemini",
+"model": "gemini-3.1-flash-lite",
+"latencyMs": 782,
+"fallbackReason": null,
+"items": [
+{
+"amount": 200000,
+"category": "Cho va tap hoa"
+}
+]
+},
+{
+"id": "s044",
+"source": "rules",
+"model": null,
+"latencyMs": 5005,
+"fallbackReason": "timeout",
+"items": []
+},
+{
+"id": "s045",
+"source": "gemini",
+"model": "gemini-3.1-flash-lite",
+"latencyMs": 1607,
+"fallbackReason": null,
+"items": [
+{
+"amount": 100000,
+"category": "Cho va tap hoa"
+}
+]
+},
+{
+"id": "s046",
+"source": "gemini",
+"model": "gemini-3.1-flash-lite",
+"latencyMs": 3013,
+"fallbackReason": null,
+"items": [
+{
+"amount": 200000,
+"category": "An uong"
+}
+]
+},
+{
+"id": "s047",
+"source": "gemini",
+"model": "gemini-3.1-flash-lite",
+"latencyMs": 2694,
+"fallbackReason": null,
+"items": [
+{
+"amount": 70000,
+"category": "An uong"
+}
+]
+},
+{
+"id": "s048",
+"source": "gemini",
+"model": "gemini-3.1-flash-lite",
+"latencyMs": 2903,
+"fallbackReason": null,
+"items": [
+{
+"amount": 45000,
+"category": "Cho va tap hoa"
+}
+]
+},
+{
+"id": "s049",
+"source": "gemini",
+"model": "gemini-3.1-flash-lite",
+"latencyMs": 3345,
+"fallbackReason": null,
+"items": [
+{
+"amount": 120000,
+"category": "An uong"
+}
+]
+},
+{
+"id": "s050",
+"source": "gemini",
+"model": "gemini-3.1-flash-lite",
+"latencyMs": 2041,
+"fallbackReason": null,
+"items": [
+{
+"amount": 35000,
+"category": "Cho va tap hoa"
+}
+]
+},
+{
+"id": "s051",
+"source": "gemini",
+"model": "gemini-3.1-flash-lite",
+"latencyMs": 1661,
+"fallbackReason": null,
+"items": [
+{
+"amount": 50000,
+"category": "An uong"
+}
+]
+},
+{
+"id": "s052",
+"source": "gemini",
+"model": "gemini-3.1-flash-lite",
+"latencyMs": 1908,
+"fallbackReason": null,
+"items": [
+{
+"amount": 10000,
+"category": "Di lai"
+}
+]
+},
+{
+"id": "s053",
+"source": "rules",
+"model": null,
+"latencyMs": 303,
+"fallbackReason": "http_503",
+"items": [
+{
+"amount": 7000,
+"category": "Di lai"
+},
+{
+"amount": 2000,
+"category": "Khac"
+}
+]
+},
+{
+"id": "s054",
+"source": "gemini",
+"model": "gemini-3.1-flash-lite",
+"latencyMs": 1580,
+"fallbackReason": null,
+"items": [
+{
+"amount": 15500,
+"category": "Cho va tap hoa"
+}
+]
+},
+{
+"id": "s055",
+"source": "gemini",
+"model": "gemini-3.1-flash-lite",
+"latencyMs": 2432,
+"fallbackReason": null,
+"items": [
+{
+"amount": 25000,
+"category": "An uong"
+}
+]
+},
+{
+"id": "s056",
+"source": "gemini",
+"model": "gemini-3.1-flash-lite",
+"latencyMs": 2977,
+"fallbackReason": null,
+"items": [
+{
+"amount": 400000,
+"category": "Khac"
+}
+]
+},
+{
+"id": "s057",
+"source": "gemini",
+"model": "gemini-3.1-flash-lite",
+"latencyMs": 1979,
+"fallbackReason": null,
+"items": [
+{
+"amount": 300000,
+"category": "Mua sam"
+}
+]
+},
+{
+"id": "s058",
+"source": "gemini",
+"model": "gemini-3.1-flash-lite",
+"latencyMs": 2502,
+"fallbackReason": null,
+"items": [
+{
+"amount": 1000000,
+"category": "Khac"
+}
+]
+},
+{
+"id": "s059",
+"source": "gemini",
+"model": "gemini-3.1-flash-lite",
+"latencyMs": 1389,
+"fallbackReason": null,
+"items": [
+{
+"amount": 30000,
+"category": "An uong"
+}
+]
+},
+{
+"id": "s060",
+"source": "gemini",
+"model": "gemini-3.1-flash-lite",
+"latencyMs": 3285,
+"fallbackReason": null,
+"items": [
+{
+"amount": 30000,
+"category": "An uong"
+}
+]
+},
+{
+"id": "s061",
+"source": "gemini",
+"model": "gemini-3.1-flash-lite",
+"latencyMs": 2095,
+"fallbackReason": null,
+"items": [
+{
+"amount": 200000,
+"category": "Cho va tap hoa"
+}
+]
+},
+{
+"id": "s062",
+"source": "gemini",
+"model": "gemini-3.1-flash-lite",
+"latencyMs": 2317,
+"fallbackReason": null,
+"items": []
+},
+{
+"id": "s063",
+"source": "gemini",
+"model": "gemini-3.1-flash-lite",
+"latencyMs": 1873,
+"fallbackReason": null,
+"items": []
+},
+{
+"id": "s064",
+"source": "gemini",
+"model": "gemini-3.1-flash-lite",
+"latencyMs": 2574,
+"fallbackReason": null,
+"items": []
+},
+{
+"id": "s065",
+"source": "gemini",
+"model": "gemini-3.1-flash-lite",
+"latencyMs": 1525,
+"fallbackReason": null,
+"items": []
+},
+{
+"id": "s066",
+"source": "rules",
+"model": null,
+"latencyMs": 5003,
+"fallbackReason": "timeout",
+"items": [
+{
+"amount": 50000,
+"category": "Khac"
+}
+]
+},
+{
+"id": "s067",
+"source": "rules",
+"model": null,
+"latencyMs": 5003,
+"fallbackReason": "timeout",
+"items": [
+{
+"amount": 5000,
+"category": "Di lai"
+},
+{
+"amount": 5000,
+"category": "Khac"
+}
+]
+},
+{
+"id": "s068",
+"source": "gemini",
+"model": "gemini-3.1-flash-lite",
+"latencyMs": 782,
+"fallbackReason": null,
+"items": [
+{
+"amount": 110000,
+"category": "An uong"
+}
+]
+},
+{
+"id": "s069",
+"source": "gemini",
+"model": "gemini-3.1-flash-lite",
+"latencyMs": 903,
+"fallbackReason": null,
+"items": [
+{
+"amount": 59000,
+"category": "An uong"
+}
+]
+},
+{
+"id": "s070",
+"source": "gemini",
+"model": "gemini-3.1-flash-lite",
+"latencyMs": 1218,
+"fallbackReason": null,
+"items": [
+{
+"amount": 55000,
+"category": "An uong"
+},
+{
+"amount": 35000,
+"category": "An uong"
+}
+]
+},
+{
+"id": "s071",
+"source": "gemini",
+"model": "gemini-3.1-flash-lite",
+"latencyMs": 769,
+"fallbackReason": null,
+"items": [
+{
+"amount": 249000,
+"category": "Mua sam"
+}
+]
+},
+{
+"id": "s072",
+"source": "gemini",
+"model": "gemini-3.1-flash-lite",
+"latencyMs": 719,
+"fallbackReason": null,
+"items": [
+{
+"amount": 312000,
+"category": "Cho va tap hoa"
+}
+]
+},
+{
+"id": "s073",
+"source": "gemini",
+"model": "gemini-3.1-flash-lite",
+"latencyMs": 772,
+"fallbackReason": null,
+"items": [
+{
+"amount": 48000,
+"category": "Di lai"
+}
+]
+},
+{
+"id": "s074",
+"source": "gemini",
+"model": "gemini-3.1-flash-lite",
+"latencyMs": 2242,
+"fallbackReason": null,
+"items": [
+{
+"amount": 200000,
+"category": "An uong"
+}
+]
+},
+{
+"id": "s075",
+"source": "gemini",
+"model": "gemini-3.1-flash-lite",
+"latencyMs": 1045,
+"fallbackReason": null,
+"items": [
+{
+"amount": 100000,
+"category": "Khac"
+}
+]
+},
+{
+"id": "s076",
+"source": "rules",
+"model": null,
+"latencyMs": 5000,
+"fallbackReason": "timeout",
+"items": [
+{
+"amount": 60000,
+"category": "Khac"
+}
+]
+},
+{
+"id": "s077",
+"source": "gemini",
+"model": "gemini-3.1-flash-lite",
+"latencyMs": 1796,
+"fallbackReason": null,
+"items": [
+{
+"amount": 120000,
+"category": "Mua sam"
+}
+]
+},
+{
+"id": "s078",
+"source": "gemini",
+"model": "gemini-3.1-flash-lite",
+"latencyMs": 771,
+"fallbackReason": null,
+"items": [
+{
+"amount": 50000,
+"category": "Khac"
+}
+]
+},
+{
+"id": "s079",
+"source": "gemini",
+"model": "gemini-3.1-flash-lite",
+"latencyMs": 634,
+"fallbackReason": null,
+"items": [
+{
+"amount": 30000,
+"category": "Khac"
+}
+]
+},
+{
+"id": "s080",
+"source": "gemini",
+"model": "gemini-3.1-flash-lite",
+"latencyMs": 639,
+"fallbackReason": null,
+"items": [
+{
+"amount": 500000,
+"category": "Mua sam"
+}
+]
+},
+{
+"id": "s081",
+"source": "gemini",
+"model": "gemini-3.1-flash-lite",
+"latencyMs": 788,
+"fallbackReason": null,
+"items": [
+{
+"amount": 50000,
+"category": "An uong"
+},
+{
+"amount": 80000,
+"category": "Di lai"
+}
+]
+},
+{
+"id": "s082",
+"source": "rules",
+"model": null,
+"latencyMs": 5002,
+"fallbackReason": "timeout",
+"items": [
+{
+"amount": 30000,
+"category": "An uong"
+}
+]
+},
+{
+"id": "s083",
+"source": "gemini",
+"model": "gemini-3.1-flash-lite",
+"latencyMs": 3874,
+"fallbackReason": null,
+"items": [
+{
+"amount": 5000,
+"category": "Di lai"
+},
+{
+"amount": 25000,
+"category": "An uong"
+}
+]
+},
+{
+"id": "s084",
+"source": "gemini",
+"model": "gemini-3.1-flash-lite",
+"latencyMs": 691,
+"fallbackReason": null,
+"items": [
+{
+"amount": 40000,
+"category": "An uong"
+}
+]
+},
+{
+"id": "s085",
+"source": "gemini",
+"model": "gemini-3.1-flash-lite",
+"latencyMs": 759,
+"fallbackReason": null,
+"items": []
+},
+{
+"id": "s086",
+"source": "rules",
+"model": null,
+"latencyMs": 5002,
+"fallbackReason": "timeout",
+"items": [
+{
+"amount": 120000,
+"category": "An uong"
+}
+]
+},
+{
+"id": "s087",
+"source": "gemini",
+"model": "gemini-3.1-flash-lite",
+"latencyMs": 707,
+"fallbackReason": null,
+"items": [
+{
+"amount": 32000,
+"category": "An uong"
+}
+]
+},
+{
+"id": "s088",
+"source": "gemini",
+"model": "gemini-3.1-flash-lite",
+"latencyMs": 751,
+"fallbackReason": null,
+"items": [
+{
+"amount": 45000,
+"category": "An uong"
+}
+]
+},
+{
+"id": "s089",
+"source": "gemini",
+"model": "gemini-3.1-flash-lite",
+"latencyMs": 784,
+"fallbackReason": null,
+"items": [
+{
+"amount": 10000,
+"category": "An uong"
+}
+]
+},
+{
+"id": "s090",
+"source": "gemini",
+"model": "gemini-3.1-flash-lite",
+"latencyMs": 792,
+"fallbackReason": null,
+"items": [
+{
+"amount": 20000,
+"category": "An uong"
+}
+]
+},
+{
+"id": "s091",
+"source": "gemini",
+"model": "gemini-3.1-flash-lite",
+"latencyMs": 709,
+"fallbackReason": null,
+"items": [
+{
+"amount": 2500,
+"category": "An uong"
+}
+]
+},
+{
+"id": "s092",
+"source": "gemini",
+"model": "gemini-3.1-flash-lite",
+"latencyMs": 742,
+"fallbackReason": null,
+"items": [
+{
+"amount": 150000,
+"category": "Di lai"
+}
+]
+},
+{
+"id": "s093",
+"source": "gemini",
+"model": "gemini-3.1-flash-lite",
+"latencyMs": 1127,
+"fallbackReason": null,
+"items": [
+{
+"amount": 120000,
+"category": "Di lai"
+}
+]
+},
+{
+"id": "s094",
+"source": "gemini",
+"model": "gemini-3.1-flash-lite",
+"latencyMs": 757,
+"fallbackReason": null,
+"items": [
+{
+"amount": 600000,
+"category": "Cho va tap hoa"
+}
+]
+},
+{
+"id": "s095",
+"source": "gemini",
+"model": "gemini-3.1-flash-lite",
+"latencyMs": 1067,
+"fallbackReason": null,
+"items": [
+{
+"amount": 89000,
+"category": "Mua sam"
+}
+]
+},
+{
+"id": "s096",
+"source": "gemini",
+"model": "gemini-3.1-flash-lite",
+"latencyMs": 783,
+"fallbackReason": null,
+"items": [
+{
+"amount": 300000,
+"category": "Khac"
+}
+]
+},
+{
+"id": "s097",
+"source": "gemini",
+"model": "gemini-3.1-flash-lite",
+"latencyMs": 795,
+"fallbackReason": null,
+"items": [
+{
+"amount": 220000,
+"category": "Khac"
+}
+]
+},
+{
+"id": "s098",
+"source": "gemini",
+"model": "gemini-3.1-flash-lite",
+"latencyMs": 4607,
+"fallbackReason": null,
+"items": [
+{
+"amount": 25000,
+"category": "An uong"
+},
+{
+"amount": 40000,
+"category": "An uong"
+},
+{
+"amount": 60000,
+"category": "An uong"
+}
+]
+},
+{
+"id": "s099",
+"source": "gemini",
+"model": "gemini-3.1-flash-lite",
+"latencyMs": 702,
+"fallbackReason": null,
+"items": [
+{
+"amount": 29000,
+"category": "An uong"
+},
+{
+"amount": 25000,
+"category": "An uong"
+},
+{
+"amount": 3000,
+"category": "Di lai"
+}
+]
+},
+{
+"id": "s100",
+"source": "rules",
+"model": null,
+"latencyMs": 5001,
+"fallbackReason": "timeout",
+"items": [
+{
+"amount": 350000,
+"category": "Di lai"
+}
+]
+}
+]

@@ -1,5 +1,7 @@
 # Tiền tiêu hôm nay (prototype học thuật)
 
+Demo: https://momopo.vercel.app
+
 Prototype cho Part 3 báo cáo kiến tập, vị trí Product Owner, case Quản lý chi tiêu của MoMo Talent 2026.
 Đây không phải sản phẩm của MoMo. Toàn bộ người dùng, giao dịch và câu test là **dữ liệu tổng hợp (synthetic)**, trừ những câu bạn tự thêm vào `data/ai-eval/real.json`.
 

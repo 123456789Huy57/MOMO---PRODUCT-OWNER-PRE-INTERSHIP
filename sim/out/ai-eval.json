@@ -3,7 +3,6 @@
   "set": "all",
   "cases": 100,
   "note": "Synthetic sentences unless set=real",
-  "gemini": "skipped (no GEMINI_API_KEY or --rules-only)",
   "rules": {
     "cases": 100,
     "exact_sentence_pct": 84,
@@ -35,6 +34,113 @@
       "tricky": "4/4",
       "brand": "5/5",
       "no-diacritics": "5/5"
+    }
+  },
+  "gemini_run": {
+    "how": "Deployed app https://momopo.vercel.app, endpoint /api/ai/parse, one request about every 5 s from a browser, 18 November 2026",
+    "model": [
+      "gemini-3.1-flash-lite"
+    ],
+    "fallbacks": [
+      [
+        "s003",
+        "http_503"
+      ],
+      [
+        "s044",
+        "timeout"
+      ],
+      [
+        "s053",
+        "http_503"
+      ],
+      [
+        "s066",
+        "timeout"
+      ],
+      [
+        "s067",
+        "timeout"
+      ],
+      [
+        "s076",
+        "timeout"
+      ],
+      [
+        "s082",
+        "timeout"
+      ],
+      [
+        "s086",
+        "timeout"
+      ],
+      [
+        "s100",
+        "timeout"
+      ]
+    ]
+  },
+  "product_as_users_see_it": {
+    "cases": 100,
+    "exact_sentence_pct": 97.0,
+    "item_recall_pct": 97.5,
+    "item_precision_pct": 98.3,
+    "category_pct_of_matched": 97.4,
+    "missed_items": 3,
+    "extra_items": 2,
+    "latency_ms_p50": 1580,
+    "latency_ms_p95": 5002,
+    "exact_by_tag": {
+      "basic": "29/29",
+      "amount-first": "2/2",
+      "bare": "8/8",
+      "multi": "16/16",
+      "no-sep": "3/3",
+      "millions": "6/6",
+      "word-number": "8/9",
+      "slang": "2/2",
+      "quantity": "5/5",
+      "multiply": "2/3",
+      "half": "2/2",
+      "bank": "4/4",
+      "cash": "1/1",
+      "exclusion": "3/3",
+      "empty": "4/4",
+      "no-label": "1/1",
+      "tricky": "4/4",
+      "brand": "5/5",
+      "no-diacritics": "4/5"
+    }
+  },
+  "gemini_answers_only": {
+    "cases": 91,
+    "exact_sentence_pct": 98.9,
+    "item_recall_pct": 99.1,
+    "item_precision_pct": 100.0,
+    "category_pct_of_matched": 99.1,
+    "missed_items": 1,
+    "extra_items": 0,
+    "latency_ms_p50": 1218,
+    "latency_ms_p95": 3345,
+    "exact_by_tag": {
+      "basic": "25/25",
+      "amount-first": "2/2",
+      "bare": "8/8",
+      "multi": "15/15",
+      "no-sep": "3/3",
+      "millions": "6/6",
+      "word-number": "8/8",
+      "slang": "2/2",
+      "quantity": "5/5",
+      "multiply": "2/2",
+      "half": "2/2",
+      "bank": "4/4",
+      "cash": "1/1",
+      "exclusion": "3/3",
+      "empty": "4/4",
+      "brand": "5/5",
+      "tricky": "3/3",
+      "no-diacritics": "3/4"
     }
   }
 }
