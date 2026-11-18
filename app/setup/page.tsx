@@ -68,7 +68,7 @@ export default function Setup() {
             <h2 className="text-header font-bold">Để dành trước mỗi tháng</h2>
             <div className="flex flex-wrap gap-2">
               {[0, 500_000, 1_000_000].map((v) => <Chip key={v} on={goal === v} onClick={() => setGoal(v)}>{v === 0 ? 'Không' : vnd(v)}</Chip>)}
-              <Chip on={![0, 500_000, 1_000_000].includes(goal)} onClick={() => setGoal(2_000_000)}>Khác</Chip>
+              <Chip on={![0, 500_000, 1_000_000].includes(goal)} onClick={() => setGoal(Math.max(100_000, Math.round(budget / 10 / 100_000) * 100_000))}>Khác</Chip>
             </div>
             {![0, 500_000, 1_000_000].includes(goal) && (
               <label className="flex flex-col gap-1 text-desc text-hint">Số tiền khác

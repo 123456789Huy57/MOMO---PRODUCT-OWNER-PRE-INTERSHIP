@@ -56,18 +56,18 @@ export default function CalendarPage() {
                   const today = date === m.today;
                   const under = d && !today && d.spent <= d.allowance;
                   return (
-                    <button key={date} type="button" disabled={!d} onClick={() => setSel(date)} aria-label={`Ngày ${i + 1}`} aria-pressed={sel === date}
+                    <button key={date} type="button" disabled={!d} onClick={() => setSel(date)} aria-label={`Ngày ${i + 1}${d && !today ? (under ? ', tiêu trong mức' : ', tiêu quá mức') : ''}`} aria-pressed={sel === date}
                       className={`flex min-h-[52px] flex-col items-center justify-center gap-0.5 rounded-[10px] ${today ? 'bg-brand text-white' : sel === date ? 'border-[1.5px] border-primary bg-selected' : ''} ${!d ? 'text-[#878787]' : ''}`}>
                       <span className="text-header-s font-semibold">{i + 1}</span>
                       <span className="num text-[10px] font-semibold leading-3">{d ? vndShort(d.allowance) : ''}</span>
-                      <span className={`h-[5px] w-[5px] rounded-full ${!d || today ? 'bg-transparent' : under ? 'bg-ok' : 'bg-[#B9B9B9]'}`} />
+                      <span aria-hidden="true" className={`h-[5px] w-[5px] ${!d || today ? 'bg-transparent' : under ? 'rounded-full bg-ok' : 'rotate-45 bg-[#8A8A8A]'}`} />
                     </button>
                   );
                 })}
               </div>
               <div className="flex gap-3.5 px-1.5 text-desc text-hint">
                 <span className="flex items-center gap-1.5"><span className="h-2 w-2 rounded-full bg-ok" />Tiêu trong mức</span>
-                <span className="flex items-center gap-1.5"><span className="h-2 w-2 rounded-full bg-[#B9B9B9]" />Tiêu quá mức</span>
+                <span className="flex items-center gap-1.5"><span className="h-2 w-2 rotate-45 bg-[#8A8A8A]" />Tiêu quá mức</span>
               </div>
             </Section>
             {s && sel && (

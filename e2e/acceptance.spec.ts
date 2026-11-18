@@ -30,7 +30,9 @@ test('US02 savings goal lowers the preview; above 50% refused', async ({ page })
   const before = await preview.innerText();
   await page.getByRole('button', { name: money(500_000) }).click();
   await expect(preview).not.toHaveText(before);
-  await page.getByRole('button', { name: 'Khác' }).click(); // sets 2,000,000 on a 3,100,000 budget
+  await page.getByRole('button', { name: 'Khác' }).click(); // starts at a valid 10% of the budget
+  await expect(page.getByRole('button', { name: 'Bắt đầu' })).toBeEnabled();
+  await page.getByLabel('Số tiền khác').fill('2000000'); // more than half of 3,100,000
   await expect(page.getByRole('button', { name: 'Bắt đầu' })).toBeDisabled();
 });
 

@@ -110,10 +110,10 @@ export default function QuickAdd() {
                 <div key={r.key} className="flex flex-col gap-1 rounded-m border border-line p-3">
                   <div className="flex items-center gap-2">
                     <input aria-label="Tên khoản chi" value={r.label} onChange={(e) => edit(r.key, { label: e.target.value })}
-                      className="min-w-0 flex-1 bg-transparent text-header-s font-semibold focus:outline-none" />
+                      className="min-w-0 flex-1 border-b border-dashed border-line2 bg-transparent text-header-s font-semibold focus:border-primary focus:outline-none" />
                     <input aria-label="Số tiền" inputMode="numeric" value={vnd(r.amount)}
                       onChange={(e) => edit(r.key, { amount: Number(e.target.value.replace(/\D/g, '')) || 0 })}
-                      className="num w-28 bg-transparent text-right text-header-s font-semibold focus:outline-none" />
+                      className="num w-28 border-b border-dashed border-line2 bg-transparent text-right text-header-s font-semibold focus:border-primary focus:outline-none" />
                     <button type="button" aria-label={`Bỏ ${r.label}`} onClick={() => remove(r.key)} className="flex h-8 w-8 items-center justify-center text-hint"><CloseIcon size={14} /></button>
                   </div>
                   <div className="flex gap-2 text-desc text-hint">
@@ -158,7 +158,9 @@ export default function QuickAdd() {
       )}
 
       {s && s.card.state !== 'notsetup' && pending > 0 && (
-        <p className="num text-body text-ink2">Sau khi thêm, hôm nay bạn còn tiêu được <strong>{vnd(Math.max(0, s.card.remaining - pending))}</strong></p>
+        s.card.remaining - pending >= 0
+          ? <p className="num text-body text-ink2">Sau khi thêm, hôm nay bạn còn tiêu được <strong>{vnd(s.card.remaining - pending)}</strong></p>
+          : <p className="num text-body text-ink2">Sau khi thêm, bạn tiêu quá phần hôm nay <strong>{vnd(pending - Math.max(0, s.card.remaining))}</strong>. Phần này sẽ được chia đều cho các ngày còn lại.</p>
       )}
       {err && <ErrorNote message={err} />}
       {tab === 'amount' && <PrimaryButton onClick={addAmount} disabled={busy || amount <= 0}>{busy ? 'Đang thêm...' : 'Thêm khoản tiêu'}</PrimaryButton>}
